@@ -1,0 +1,220 @@
+/* Pomodoro CSS Style */
+/* ================== */
+
+/* == Theme Variables == */
+:root {
+   --theme: navy;
+   --light: white;
+   --play: navy;
+   --mainBG: #2eb3e4;
+   --clockBG: #e4b72e;
+   --border: black;
+   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* == Main Tags == */
+html {
+   color: var(--dark);
+   background-color: var(--mainBG);
+}
+body {
+   margin: 30px 50px;
+   line-height: 20px;
+}
+
+header {
+   color: var(--light);
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 30px; 
+}
+
+.divide-line-header {
+   color: var(--light);
+   margin-top: 25px;
+   width: 25%;
+}
+
+/* == The Clock == */
+.pomodoro {
+   display: block;
+   width: 400px;
+   height: 325px;
+   margin: auto;
+   background-color: var(--clockBG);
+   border-radius: 10px;
+   box-shadow: var(--shadow);
+}
+
+.labels {
+   display: flex;
+   text-transform: uppercase;
+}
+
+#break-label {
+   width: 50%;
+   padding-top: 25px;
+   padding-bottom: 15px;
+   text-align: center;
+   color: var(--theme);
+}
+
+#session-label {
+   width: 50%;
+   padding-top: 25px;
+   padding-bottom: 15px;
+   text-align: center;
+   color: var(--theme);
+
+}
+.timer-settings {
+   display: flex;
+   height: 30px;
+   align-content: center;
+   justify-content: center;
+}
+
+.break{
+   display: flex;
+   width: 50%;
+}
+
+#span-break-min {
+   margin: 0 5px 0 5px;
+   width: 15%;
+   font-weight: 100;
+   font-size: 14px;
+   color: var(--theme);
+}
+
+#break-decrement {
+   width: 15%;
+   margin-left: 20%;
+   text-align: center;
+}
+
+#break-length {
+   font-family: 'Orbitron', sans-serif;
+   width: 15%;
+   margin-top: 2px;
+   font-weight: 700;
+   font-size: 16px;
+   color: var(--theme);
+   text-align: center;
+}
+
+#break-increment {
+   width: 15%;
+   text-align: center;
+}
+
+.session {
+   display: flex;
+   width: 50%
+}
+
+#span-session-min {
+   margin: 0 5px 0 5px;
+   width: 15%;
+   font-weight: 100;
+   font-size: 14px;
+   color: var(--theme);
+}
+
+#session-decrement {
+   width: 15%;
+   margin-left: 20%;
+   text-align: center;
+}
+
+#session-length {
+   font-family: 'Orbitron', sans-serif;
+   width: 15%;
+   margin-top: 2px;
+   font-weight: 700;
+   font-size: 16px;
+   color: var(--theme);
+   text-align: center;
+}
+#session-increment {
+   width: 15%;
+   text-align: center;
+}
+
+.timer {
+   margin: auto;
+   margin-top: 10px;
+   width: 55%;
+   height: 150px;
+   border: 5px;
+   border-color: var(--light);
+   border-style: solid;
+   border-top-right-radius: 50px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   box-shadow: var(--shadow);
+}
+
+#timer-label {
+   padding-top: 15px;
+   font-size: 22px;
+   font-weight: 300;
+   text-align: center;
+   color: var(--theme);
+}
+
+#time-left {
+   font-family: 'Orbitron', sans-serif;
+   margin: auto;
+   padding-top: 45px;
+   font-size: 48px;
+   font-weight: 700;
+   text-align: center;
+   color: var(--theme);
+}
+
+.timer-control {
+   display: flex;
+   margin-top: 15px;
+   align-content: center;
+   justify-content: center;
+}
+
+#start_stop{
+   float: left;
+   font-size: 28px;
+   font-weight: 900;
+   color: var(--play);
+ 
+}
+
+#reset {
+   float: right;
+}
+
+/* == Icons CSS == */
+i {
+   font-size: 22px;
+   color: var(--theme);
+}
+.fa-pause {
+   padding-left: 5px;
+}
+
+.fa-sync {
+   padding-left: 25px;
+}
+
+/* == CSS Footer == */
+footer {
+   margin-top: 15px;
+   font-size: 12px;
+   color: var(--light);
+   text-align: center;
+}
+
+footer a {
+   color: var(--light);
+   text-decoration: none;
+}

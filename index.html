@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link type="text/css" rel="stylesheet" href="style.css">
+   <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <title>Pomodoro Clock</title>
+</head>
+<body>
+      <!-- FreeCodeCamp Project Tester-->
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   
+   <header>
+      <div>
+         <h1>Pomodoro Clock</h1><hr class="divide-line-header">
+         <p>A FreeCodeCamp Project Challenge</p>
+      </div>
+   </header>
+   <div class="pomodoro" id="pomodoro">
+      <div class="labels">         
+         <div id="session-label">
+            Working Time
+         </div>
+         <div id="break-label">
+            Break Duration
+         </div >
+
+      </div>
+      <div class="timer-settings">         
+         <div class="session">
+            <div id="session-decrement"><i class="fas fa-plus-circle"></i></div>
+            <div id="session-length"></div><span id="span-session-min">mins</span>
+            <div id="session-increment"><i class="fas fa-minus-circle"></i></div>
+         </div>
+         <div class="break">
+            <div id="break-decrement"><i class="fas fa-plus-circle"></i></div>
+            <div id="break-length"></div><span id="span-break-min">mins</span>
+            <div id="break-increment"><i class="fas fa-minus-circle"></i></div>
+         </div>
+
+      </div>
+      <div class="timer">
+         <div id="timer-label"></div>
+         <div id="time-left"></div>
+      </div>
+      <div class="timer-control">
+         <div id="start_stop"></div>
+         <div id="reset"><i class="fas fa-sync"></i></div>
+      </div>
+   </div>
+   <footer>
+         <div>
+            <span>Presented by Eric R. Kock - Feb. 2019 | 
+               <a href="https://about.me/erickock" target="_blank"> About Me</a> -
+               <a href="https://codepen.io/EricRKock/" target="_blank"> CodePen </a> - 
+               <a href="https://github.com/ericrkock/Code-Training/tree/master/FreeCodeCamp/Projects" target="_blank"> GitHub</a>
+            </span>
+         </div>
+   </footer>
+
+   <script src="pomodoro-clock.js"></script>
+</body>
+</html>
